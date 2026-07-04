@@ -1,8 +1,8 @@
 import os
-import psycopg2
 import random
 import pandas as pd
-import psycopg # Not strictly used in app functions but was imported earlier
+import psycopg2
+import psycopg  # Not strictly used in app functions but was imported earlier
 
 # Database connection URL (replace with your actual URL)
 DATABASE_URL="postgresql://gabriel:O1JqMd7jyWGNLMMY46bXBA@young-fawn-28533.j77.aws-us-east-1.cockroachlabs.cloud:26257/defaultdb?sslmode=verify-full"
