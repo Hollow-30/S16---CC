@@ -1,6 +1,3 @@
-
-python -m pip install psycopg[binary]
-
 import os
 import psycopg2
 import random
