@@ -50,16 +50,13 @@ def registrar_venta(producto_id, cantidad):
 
 
 if __name__ == '__main__':
-    print("
---- Demostración de la aplicación ---
-")
+    print("Demostración de la aplicación ---")
 
     # 1. Listar productos iniciales
     print("1. Productos actuales:")
     df_initial_products = listar_productos()
     print(df_initial_products.to_string())
-    print(f"Total de productos: {len(df_initial_products)}
-")
+    print(f"Total de productos: {len(df_initial_products)}")
 
     # 2. Añadir un nuevo producto
     print("2. Añadiendo 'Laptop Gaming'...")
@@ -67,8 +64,7 @@ if __name__ == '__main__':
     df_after_add = listar_productos()
     print("Productos después de añadir 'Laptop Gaming':")
     print(df_after_add[df_after_add['nombre'] == 'Laptop Gaming'].to_string())
-    print(f"Total de productos: {len(df_after_add)}
-")
+    print(f"Total de productos: {len(df_after_add)}")
 
     # 3. Registrar una venta para el nuevo producto
     print("3. Registrando una venta para 'Laptop Gaming'...")
@@ -84,8 +80,6 @@ if __name__ == '__main__':
     final_stock_laptop = df_after_sale[df_after_sale['nombre'] == 'Laptop Gaming']['stock'].iloc[0]
     print("Stock final de 'Laptop Gaming':")
     print(df_after_sale[df_after_sale['nombre'] == 'Laptop Gaming'].to_string())
-    print(f"Stock final esperado: {initial_stock_laptop - cantidad_vendida}
-")
+    print(f"Stock final esperado: {initial_stock_laptop - cantidad_vendida}")
 
-    print("--- Demostración completada ---
-")
+    print("--- Demostración completada ---")
